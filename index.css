@@ -1,0 +1,537 @@
+@font-face {
+    font-family: afanan;
+    src: url(afanan.tff);
+}
+
+@font-face {
+  font-family: Feral-Regular;
+  src: url(Feral-Regular.tff);
+}
+
+
+* {
+  margin: 0;
+}
+
+#imgbg {
+  width: 101%;
+  height: auto;
+  position: fixed;
+  z-index: -3;
+}
+
+#background {
+  width: 100vw;
+  height: auto;
+}
+
+#hills {
+  width: 100vw;
+  height: auto;
+}
+
+#hillsimg {
+  bottom: -5px;
+  position: absolute;
+  z-index: 1;
+}
+
+#tree {
+  width: 150vw;
+}
+
+#treeimg {
+  height: 60vw;
+  width: auto;
+  position: absolute;
+  bottom: -6px;
+  margin-left: -10px;
+  z-index: 3;  
+}
+
+#wall {
+  width: 100vw;
+  height: auto;
+}
+
+#wallimg {
+  z-index: 3;
+  position: absolute;
+  bottom: -5px; 
+}
+
+#gate {
+  width: 50%;
+  height: auto;
+}
+
+#gateimg {
+  position: absolute;
+  z-index: 3;
+  width: 37%;
+  height: auto;
+  bottom: -5px;
+  margin-left: 479px;
+  cursor: pointer;
+}
+
+#gateimg:hover {
+  transform: scale(1.025);
+}
+
+#moon {
+  width: 50%;
+  height: auto;
+}
+
+#moonimg {
+  z-index: 0;
+  right: 55px;
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  margin-right: -50px;
+  cursor: pointer;
+  top: 30px;
+}
+
+#moonimg:hover {
+  transform: scale(1.025);
+}
+
+#pumpkin {
+  width: 20%;
+  height: auto;
+}
+
+#pumpkinimg {
+  width: 10vw;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  right: 120px;
+  bottom: 145px;
+  cursor: pointer;
+}
+
+#pumpkinimg:hover {
+  transform: scale(1.025);
+}
+
+#pumpkinface {
+  width: 20%;
+  height: auto;
+}
+
+#pumpkinfaceimg {
+  width: 9vw;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  right: 129px;
+  bottom: 144px;
+  display: none;
+}
+
+#house {
+  width: 20%;
+  height: auto;
+}
+
+#houseimg {
+  width: 8vw;
+  height: auto;
+  top: 210px;
+  right: 154px;
+  z-index: 3;
+  position: absolute;
+  cursor: pointer;
+}
+
+#houseimg:hover{
+  transform: scale(1.025);
+}
+
+#candy {
+  width: 10vw;
+  height: auto;
+}
+
+#candyimg {
+  width: 3vw;
+  height: auto;
+  z-index: 3;
+  position: absolute;
+  right: 80px;
+  bottom: 144px;
+  cursor: pointer;
+}
+
+#candyimg:hover {
+  transform: scale(1.3);
+}
+
+#graveyard {
+  width: 70vw;
+  height: auto;
+}
+
+#graveyardimg {
+  z-index: 1;
+  position: absolute;
+  width: 50vw;
+  height: auto;
+  bottom: 70px;
+  left: 184px;
+}
+
+#gravestone {
+  width: 5vw;
+  height: auto;
+}
+
+#gravestoneimg {
+  z-index: 3;
+  position: absolute;
+  width: 3vw;
+  height: auto;
+  bottom: 185px;
+  left: 390px;
+  cursor: pointer;
+}
+
+#gravestoneimg:hover{
+  transform: scale(1.1);
+}
+
+#cat {
+  width: 20vw;
+  height: auto;
+}
+
+#catimg {
+  width: 15vw;
+  height: auto;
+  z-index: 3;
+  bottom: 145px;
+  position: absolute;
+  left: 150px;
+  cursor: pointer;
+}
+
+#catimg:hover{
+  transform: scale(1.025);
+}
+
+#owl {
+  width: 20vw;
+  height: auto;
+}
+
+#owlimg {
+  width: 6vw;
+  height: auto;
+  top: 105px;
+  left: 150px;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#owlimg:hover{
+  transform: scale(1.025);
+}
+
+#Lghost {
+  width: 10vw;
+  height: auto;
+}
+
+#Lghostimg {
+  z-index: -1;
+/*
+  bottom: 240px;
+  left: 380px;
+*/
+}
+
+#Rghost {
+  width: 10vw;
+  height: auto;
+}
+
+#Rghostimg {
+  z-index: -1;
+/*
+  bottom: 350px;
+  left: 450px;
+*/
+}
+
+.ghosts {
+  position: absolute;
+/*
+  width: 4vw;
+  height: auto;
+*/
+  top:80%;
+/*  transition:top 3s;*/
+}
+
+#display {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+  z-index: 2;
+  margin-left: 55px;
+}
+
+#cloud1 {
+  width: 40vw;
+  height: auto;
+}
+
+#cloud1img {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  top: 80px;
+  animation: cloud1move 65s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear
+}
+
+#cloud2 {
+  width: 40vw;
+  height: auto;
+}
+
+#cloud2img {
+  width: 25vw;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  left: 500px;
+  cursor: pointer;
+}
+
+#cloud2img:hover{
+  transform: scale(1.025);
+}
+
+#cloud3 {
+  width: 40vw;
+  height: auto;
+}
+
+#cloud3img {
+  width: 40vw;
+  height: auto;
+  position: absolute;
+  z-index: -3;
+  top: 230px;
+  right: 200px;
+   animation: cloud3move 55s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+#witch {
+  width: 20vw;
+  height: auto;
+}
+
+#witchimg {
+  width: 5vw;
+  height: auto;
+  z-index: 0;
+  position: absolute;
+  top: 170px;
+  right: 240px;
+  cursor: pointer;
+  animation: witchmove 5s infinite;
+  animation-timing-function: ease-in-out;
+  opacity:0;
+  transition: opacity 1s;
+}
+
+#witchimg:hover{
+  transform: scale(1.025);
+}
+
+/*text*/
+
+.factbox {
+  width: 40vw;
+  height: 20vw;
+  background-color: chocolate;
+  border: 10px solid darkorange;
+  z-index: 8;
+  margin: auto;
+  position: absolute;
+  font-family: Feral-Regular;
+  text-align: center;
+  vertical-align: middle;
+  color:white;
+  border-radius: 10px;
+  transition: opacity 0.5s;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.factbox:hover {
+  opacity: 0.5;
+}
+
+#fact4 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact4words {
+  position: absolute;
+  padding-top: 80px;
+}
+
+.close {
+  width: 5vw;
+  height: auto;
+}
+.closebutton {
+  width: 2vw;
+  height: auto;
+  position: absolute;
+  z-index: 9;
+  right: 5px;
+  top: 2px;
+  cursor: pointer;
+}
+
+#fact1 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact1words {
+  position: absolute;
+  padding-top: 40px;
+}
+
+#fact2 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact2words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+#fact3 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+  
+}
+
+#fact3words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+#fact5 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact5words {
+  position: absolute;
+  padding-top: 50px;
+}
+
+#fact6 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact6words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+#fact7 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact7words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+#fact8 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact8words {
+  position: absolute;
+  padding-top: 80px;
+}
+
+#fact9 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact9words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+#fact10 {
+  top: 250px;
+  font-size: 1.8em;
+  display: none;
+}
+
+#fact10words {
+  position: absolute;
+  padding-top: 30px;
+}
+
+@keyframes witchmove {
+    0%   {right: 240px; top:170px;}
+  25%  {top: 150px;}
+    50%  {right: 90px; top: 170px;}
+  75%  {top: 150px;}
+    100% {right: 240px; top: 170px;}  
+}
+
+@keyframes cloud1move {
+  0% {left: 0px;}
+  100% {left: 800px;}
+}
+
+@keyframes cloud3move {
+  0% {right: 200px;}
+  100% {right: 800px;}
+}
+
+
+
+/*snow*/
