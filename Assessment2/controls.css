@@ -1,0 +1,38 @@
+#controls {
+    width: 50vw;
+}
+
+#number {
+    background-color: black;
+    color: white;
+}
+
+#random {
+    background-color: pink;
+    color: white;
+}
+
+#plus {
+    background-color: grey;
+    color: white;
+}
+
+.slider {
+    width: 10%;
+}
+
+.newDiv {
+    width: 100px;
+    height: 100px;
+    position: relative;
+	  display: inline-block;
+}
+
+.newimg {
+  width:auto;
+  height:auto;
+  position: absolute;
+  left:0;
+  right:0;
+  margin:auto;
+}
