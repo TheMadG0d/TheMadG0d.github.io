@@ -1,0 +1,175 @@
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Nunito', sans-serif;*/
+body{
+    background-color: #05668d;
+    margin: 0px;
+}
+
+/*top menu*/
+#topbar{
+    background-color: #ebf2fa;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+}
+
+
+a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#btm{
+    position: absolute;
+    left: 400px;
+    top: 15px;
+    
+}
+
+
+#logo{
+    width: 100px;
+    height: auto;
+    z-index: 1;
+    margin: auto;
+    display: block;
+    padding-top:5px;
+}
+
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+}
+
+/*
+#title{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    color: white;
+}
+*/
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    color: white;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    color: white; 
+}
+
+#circles{
+    text-align: center;
+    
+}
+
+#one{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+#two{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+#three{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+
+
+p{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 14pt;
+}
+
+#fill{
+    position:absolute;
+    top: 195px;
+    left: 580px; 
+}
+
+#explore{
+    position: absolute;
+    top: 295px;
+    left: 580px;
+}
+
+#click{
+    position: absolute;
+    top: 395px;
+    left: 580px;
+}
+
+hr{
+    position: absolute;
+    width: 70%;
+    top: 475px;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+}
+
+#colorGuide{
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 450px;
+}
+
+.icons{
+    width: 100px;
+    height: auto;
+    position: absolute;
+}
+
+/*
+.categories{
+    display: inline-block;
+}
+*/
+
+#outdoors{
+    top: 600px;
+    left: 500px;
+}
+
+#food{
+    top: 600px;
+    right: 500px;
+}
+
+#entertainment{
+    top: 850px;
+    left: 500px;
+}
+
+#educational{
+    top: 850px;
+    right: 500px;
+    margin-bottom: 50px;
+}
+
+
+

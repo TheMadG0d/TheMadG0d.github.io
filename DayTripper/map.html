@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DayTripper</title>
+	<link href="map.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+</head>
+
+<body>
+	
+<!--	Code for sidebar-->
+	<div id="controls">
+		
+			<h1 id="controltitle"> Plan Your Trip</h1>
+			<hr/>
+		
+	
+	
+			<div id="form">
+				<h3> Day Activities</h3>
+				<label class="switch">
+						<input type="checkbox" id="boxA">
+						<span class="slider round"></span>
+				</label>
+				<div id="nightactive"></div>
+				<h3> Night Activities</h3>
+				<label class="switch">
+						<input type="checkbox" id="boxB">
+						<span class="slider round"></span>
+				</label>
+				<br>
+				<h3 id="kids"> Kid Friendly?</h3>
+				<label class="switch">
+						<input type="checkbox" id="kidswitch">
+						<span class="slider round"></span>
+				</label>
+				<h1 id="itintitle"> Itinerary</h1>
+				<hr id="secondrule"/>
+				<br>
+				<h3> # of Activities:</h3>
+				<div id="activenum">0</div>
+				<br>
+				<h3> # of Hours:</h3>
+				<div id="hours">0</div>
+			</div>
+			
+			<div id="itindisp"></div>
+			
+	</div>
+			
+	<div id="display">
+
+<!--	ICON	IMGS-->
+		<div id="vancity">
+			<img src="imgs/map.svg" id="mapimg"/>
+			<a href="eventpage.html">
+				<img src="imgs/seawall.svg" id="seawall" class="markers"/>
+			</a>
+			<a href="aquarium.html">
+				<img src="imgs/aquarium.svg" id="aquarium" class="markers"/>
+			</a>
+			<a href="science.html">
+				<img src="imgs/science.svg" id="scienceworld" class="markers"/>
+			</a>
+			<a href="capilano.html">
+				<img src="imgs/capilano.svg" id="bridge" class="markers"/>
+			</a>
+			<a href="Grouse.html">
+				<img src="imgs/grouse.svg" id="grouse" class="markers"/>
+			</a>
+			<a href="Rio.html">
+				<img src="imgs/Rio.svg" id="rio" class="markers"/>
+			</a>
+			<a href="stormcrow.html">
+				<img src="imgs/stormcrow.svg" id="stormcrow" class="markers"/>
+			</a>
+			<a href="theatresports.html">
+				<img src="imgs/theatresports.svg" id="improv" class="markers"/>
+			</a>
+			<a href="Wreck.html">
+				<img src="imgs/wreck.svg" id="wreck" class="markers"/>
+			</a>
+			<a href="Canucks.html">
+				<img src="imgs/canucks.svg" id="canucks" class="markers"/>
+			</a>
+		</div>
+		
+	<!--display controls -->
+		<div id="zoomslide">
+			– <input type="range" min="1275" max="2005" value="1275" id="displayslider"> +
+		</div>
+		<div id="butts">
+			<a href="HowItWorks.html"><button id="help" class="buttons">?</button></a>
+		</div>
+		
+		<button id="left" class="directbuttons"> 	&larr; </button>
+		<button id="up" class="directbuttons"> 		&uarr; </button>
+		<button id="right" class="directbuttons"> &rarr; </button>
+		<button id="down" class="directbuttons"> 	&darr; </button>
+		
+	</div>
+	
+	
+	<script src="map.js"></script>
+</body>
+
+</html>

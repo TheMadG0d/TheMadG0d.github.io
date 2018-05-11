@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+}
+
+#display {
+	background-color:#ebf2fa;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+#mountains {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#trees {
+	height: 300px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#logo {
+	position: fixed;
+	z-index: 1;
+	height: 300px;
+	width: 600px;
+	top: 0px;
+	bottom: 200px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+.fade {
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#start {
+	background-color: #05668d;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	width: 250px;
+	height: 60px;
+	border-radius: 10px;
+	font-size: 24pt;
+	padding: 10px;
+	z-index: 2;
+	position: fixed;
+	border: 2px solid white;
+	top: 160px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	cursor: pointer;
+}
+
+#start:hover {
+	width: 300px;
+	height: 70px;
+	font-size: 30pt;
+}
+
+#start:active {
+	background-color:#9ab9ce;
+}

@@ -1,0 +1,160 @@
+
+<!--Created this "fake" map page to use as the background when pop ups are visible. This way, the pop ups don't reappear everytime a user navigates to an activity page and back to the map. Everything is copied and pasted from map.html but pop up code is added. Uses same style sheet as map.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DayTripper</title>
+	<link href="map.css" rel="stylesheet" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div id="controls" class="fakecontrols">
+		
+			<h1 id="controltitle"> Plan Your Trip</h1>
+			<hr/>
+		
+	
+	
+			<div id="form">
+				<h3> Day Activities</h3>
+				<label class="switch">
+						<input type="checkbox" id="boxA">
+						<span class="slider round"></span>
+				</label>
+<!--				<input type="checkbox" class="radiobutt" id="boxA"/>-->
+				<div id="nightactive"></div>
+				<h3> Night Activities</h3>
+				<label class="switch">
+						<input type="checkbox" id="boxB">
+						<span class="slider round"></span>
+				</label>
+<!--				<input type="checkbox" class="radiobutt" id="boxB"/>-->
+				<br>
+				<h3 id="kids"> Kid Friendly?</h3>
+				<label class="switch">
+						<input type="checkbox" id="kidswitch">
+						<span class="slider round"></span>
+				</label>
+				<h1 id="itintitle"> Itinerary</h1>
+				<hr id="secondrule"/>
+				<br>
+				<h3> # of Activities:</h3>
+				<div id="activenum">0</div>
+				<br>
+				<h3> # of Hours:</h3>
+				<div id="hours">0</div>
+			</div>
+			<div id="itindisp"></div>
+	</div>
+	
+<!--	NEW CODE, pop up tutorials-->
+	
+	<div class="popupbox" id="popup1"> 
+			<div class="popuptitle"> <h2 class="tutorial">Tutorial</h2> </div>
+					<h1 class="popupheader"> Welcome to DayTripper!</h1><p> A new app designed to help you discover fun activities in Vancouver!<br/><br/> To get started, click on the options in the side bar to reveal activities around the city and plan your itinerary </p>
+					<button class="next" id="next1">Next</button>
+	</div>
+	
+	<div class="popupbox" id="popup2"> 
+			<div class="popuptitle"> <h2 class="tutorial">Tutorial</h2> </div>
+					<h1 class="popupheader"> Activity Markers</h1><p> Each activity will appear on the map in a coloured marker that symbolizes the type of activity. The categories are:<br/><br/></p> 
+       		<div id="outdoors" class="icons">
+        		<img src="icons/redAsset%201.svg" alt="Outdoors" class="marker">
+        		<h2 class="categories">Outdoors</h2>
+    			</div>
+    			<div id="educational" class="icons">
+        		<img src="icons/orangeAsset%204.svg" alt="Educational" class="marker">
+        		<h2 class="categories">Educational</h2>
+    			</div>
+    			<div id="entertainment" class="icons">
+        		<img src="icons/purpleAsset%203.svg" alt="Entertainment" class="marker">
+        		<h2 class="categories">Entertainment</h2>
+    			</div>
+    			<div id="fooddrink" class="icons">
+        		<img src="icons/yellowAsset%202.svg" alt="Food&Drink" class="marker">
+        		<h2 class="categories">Food/Drink</h2>
+    			</div>
+					<button class="next" id="next2">Next</button>
+	</div>
+	
+	<div class="popupbox" id="popup3"> 
+			<div class="popuptitle"> <h2 class="tutorial">Tutorial</h2> </div>
+					<h1 class="popupheader"> Controls</h1><p> To move around the map, click the arrows in the top right <br/> or use the arrow keys on your keyboard <br/><br/></p> 
+       		<div id="screenarrows" class="keys">
+        		<img src="imgs/arrows.svg" alt="arrows" class="marker">
+    			</div>
+    			<div id="keyboardarrows" class="keys">
+        		<img src="imgs/keyboard.svg" alt="arrowkeys" class="marker">
+    			</div>
+					<button class="next" id="next3">Next</button>
+	</div>
+	
+	<div class="popupbox" id="popup4"> 
+			<div class="popuptitle"> <h2 class="tutorial">Tutorial</h2> </div>
+					<h1 class="popupheader"> More Info</h1><p> Click on the activities for more information about them. If you need more help, click on the question mark! <br/><br/></p> 
+					<a href="map.html"><button class="next" id="next4">Begin</button></a>
+	</div>
+		
+<!--end of pop ups-->
+		
+			
+	<div id="fakedisplay">
+<!--		IMGS-->
+		<div id="vancity">
+			<img src="imgs/map.svg" id="mapimg"/>
+			<a href="eventpage.html">
+				<img src="imgs/seawall.svg" id="seawall" class="markers"/>
+			</a>
+			<a href="aquarium.html">
+				<img src="imgs/aquarium.svg" id="aquarium" class="markers"/>
+			</a>
+			<a href="science.html">
+				<img src="imgs/science.svg" id="scienceworld" class="markers"/>
+			</a>
+			<a href="capilano.html">
+				<img src="imgs/capilano.svg" id="bridge" class="markers"/>
+			</a>
+			<a href="Grouse.html">
+				<img src="imgs/grouse.svg" id="grouse" class="markers"/>
+			</a>
+			<a href="Rio.html">
+				<img src="imgs/Rio.svg" id="rio" class="markers"/>
+			</a>
+			<a href="stormcrow.html">
+				<img src="imgs/stormcrow.svg" id="stormcrow" class="markers"/>
+			</a>
+			<a href="theatresports.html">
+				<img src="imgs/theatresports.svg" id="improv" class="markers"/>
+			</a>
+			<a href="Wreck.html">
+				<img src="imgs/wreck.svg" id="wreck" class="markers"/>
+			</a>
+			<a href="Canucks.html">
+				<img src="imgs/canucks.svg" id="canucks" class="markers"/>
+			</a>
+		</div>
+		
+	<!--display controls -->
+		<div id="zoomslide">
+			– <input type="range" min="1275" max="2005" value="1275" id="displayslider"> +
+		</div>
+		<div id="butts">
+			<a href="HowItWorks.html"><button id="help" class="buttons">?</button></a>
+		</div>
+		
+		<button id="left" class="directbuttons"> 	&larr; </button>
+		<button id="up" class="directbuttons"> 		&uarr; </button>
+		<button id="right" class="directbuttons"> &rarr; </button>
+		<button id="down" class="directbuttons"> 	&darr; </button>
+		
+	</div>
+	
+	
+	<script src="fakemap.js"></script>
+</body>
+
+</html>
